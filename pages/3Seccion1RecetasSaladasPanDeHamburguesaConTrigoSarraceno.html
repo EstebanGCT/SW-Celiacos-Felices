@@ -1,0 +1,207 @@
+<!DOCTYPE html><!-- Indica que el documento está bajo el estándar de HTML5. -->
+
+<html lang="es"><!-- <html> Representa la raíz de un documento HTML. Es una buena práctica indicar el idioma mediante el atributo lang. -->
+
+<head><!-- <head> En su interior se incluye la colección de metadatos sobre el documento y los enlaces a scripts y hojas de estilo. -->
+
+    <meta charset="UTF-8"><!-- <meta> Define los metadatos que no pueden ser definidos usando otro elemento HTML. -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Celiacos Felices</title><!-- <tittle> Representa el título del documento. Se muestra en la barra superior del navegador o en las pestañas de página. -->
+
+    <link rel="stylesheet" href="../css/style.css"><!-- <link> Utilizada para enlazar documentos externos, por ejemplo CSS.-->
+
+    <link rel="shortcut icon" href="../assets/img/shortcurIcon.png" type="image/x-icon">
+</head>
+
+
+
+<body><!-- <body> Representa el contenido principal de un documento HTML. Sólo puede existir un elemento <body> en el documento. -->
+
+
+    <header><!-- Determina la cabecera de una web o de un elemento. -->
+        
+        <section><!-- <section> Define secciones de una web. -->
+            <ul class="navBar">
+                <li>
+                    <a href="../index.html"><p class="logo">Celiacos felices</p></a>
+                </li>
+            </ul>
+            <!--<p class="logo">Celiacos felices</p> Logo -->
+        </section>
+
+        <nav><!-- <nav> Especifica una sección que contiene un menú de navegación. -->
+            <ul class="navBar"><!-- <ul> Determina una lista de artículos sin orden. -->
+                <li><a href="../pages/2Seccion1RecetasSaladas.html"><p class="saladas">Saladas</p></a></li><!-- <li> Define un elemento de una lista.-->
+                <li><a href="../pages/notFound.html"><p class="dulces">Dulces</p></a></li>
+                <li><a href="../pages/notFound.html"><p class="sinLactosa">Sin Lactosa</p></a></li>
+                <li><a href="../pages/notFound.html"><p class="sinAzucar">Sin Azucar</p></a></li>
+                <li><a href="../pages/notFound.html"><p class="veganas">Veganas</p></a></li>
+                <li><a href="../pages/4AgregarRecetas.html"><p class="agregarReceta">Agregar receta</p></a></li>
+                <li><a href="../pages/5VidaSinGluten.html"><p class="vidaSinGluten">Vida sin gluten</p></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main><!-- <main> Determina el contenido principal del documento. Solo puede existir un elemento <main> en el documento. -->
+
+        <section>
+            <img src="../assets/img/1panDeHamburguesaConTrigoSarraceno.png"> <!-- Banner -->
+            <h1>Pan de hamburguesa </h1>
+            <br>
+            <h1>con trigo sarraceno</h1><!-- Titulo de la pagina-->
+        </section>
+
+<!-- <h1>,<h2>,<h3>,<h4>,<h5>,<h6> Describe el tema de la sección. Disponemos de seis niveles: de h1 a h6, siendo <h1> la cabecera de mayor importancia. Sólo puede existir una etiqueta <h1> en el documento. -->
+
+        <section><!-- INFORMACIÓN DE LA RECETA-->
+            
+            <div><!-- <div> Representa un contenedor genérico sin ningún significado especial. -->
+                <p class="caracteristicasDeReceta">Tiempo de preparación</p>
+                <img src="../assets/img/3tiempoDePreparacion.png" alt="Pastas">
+                <p class="caracteristicasDeReceta">45"</p>
+            </div>
+
+            <div>
+                <p class="caracteristicasDeReceta">Tiempo de cocción</p>
+                <img src="../assets/img/3tiempoDeCoccion.png" alt="Tiempo de cocción">
+                <p class="caracteristicasDeReceta">20"</p>
+            </div>
+
+            <div>
+                <p class="caracteristicasDeReceta">Porciones</p>
+                <img src="../assets/img/3porciones.png" alt="Porciones">
+                <p class="caracteristicasDeReceta">1</p>
+            </div>
+
+            <div>
+                <p class="caracteristicasDeReceta">Dificultad</p>
+                <img src="../assets/img/3dificultad.png" alt="Pastas">
+                <p class="caracteristicasDeReceta">Media</p>
+            </div>
+
+        </section>
+
+
+        <section><!-- Ingredientes -->
+            <h2>Ingredientes</h2>
+            <div>
+                <ul class="textoDeRecetasIngredientes">
+                    <li>100 gr. de harina de arroz</li>
+                    <li>70 gr. de fécula de mandioca</li>
+                    <li>100 gr. de almidón de maíz</li>
+                    <li>10 gr. de goma xántica</li>
+                    <li>1/2 cucharadita de sal</li>
+                    <li>10 gr. de polvo para hornear</li>
+                    <li>2 huevos</li>
+                    <li>45 gr. de manteca derretida</li>
+                    <li>120 cc. de agua tibia</li>
+                    <li>45 gr. de azúcar</li>
+                    <li>10 gr. de levadura en polvo</li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section><!-- Pasos -->
+            <h2>Pasos</h2>
+            <div>
+                <ol class="textoDeRecetasPasos">
+                    <li>Espumar la levadura: Lo primero que tenemos que hacer para preparar este pan sin gluten para celíacos es espumar la levadura. Para eso vas a mezclar la levadura seca con el azúcar y el agua tibia, y vas a dejar descansar hasta que comience a espumar.</li>
+                    <li>Batir ingredientes húmedos:  En un recipiente profundo vas a agregar los huevos, la levadura ya lista y vas a batir por unos segundos hasta que se integre. Es preferible para esta receta usar batidora eléctrica, pero si no tenés podés batir todo a mano. Va a llevar un poco más de tiempo, pero no es imposible de hacer.</li>
+                    <li>Agregar ingredientes secos: Cuando los huevos y la levadura estén integrados, vas a agregar la manteca derretida, la goma xántica, el polvo para hornear, la sal, la harina de arroz, la fécula de mandioca y el almidón de maíz.</li>
+                    <li>Con todo dentro del recipiente, vamos a batir todo con batidora por 10 minutos hasta integrar completamente. Vas a notar que el resultado de esta receta no es una masa que pueda amasarse, sino que es pegajosa y húmeda. Como siempre decimos, mientras más húmeda sea la masa, más esponjoso es el resultado final, así que no agregues secos adicionales a los de los ingredientes.</li>
+                    <li>Hornear pancitos sin gluten: En una placa aceitada vas a distribuir porciones de masa con la ayuda de cucharas o lo que te quede más cómodo. Es importante colocar los bollitos de masa cercanos entre sí. Cuando tengas todos los pancitos sin gluten en la placa, vas a prender el horno. ¿Recién? Sí, recién ahora, porque vamos a aprovechar que el horno tiene que precalentar a horno medio (180°C)  para que los pancitos sin gluten leuden. Cuando el horno esté precalentado a temperatura media vas a cocinar tus pancitos entre 30 y 40 minutos. Nosotros los tuvimos 35 minutos en horno, pero esto va a depender del tamaño de tus panes y del tipo de horno que tengas. </li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            
+            <h2>Mas recetas</h2>
+            
+            <section>
+
+                <div>
+                    <a class="textSobreImagen" href="../pages/notFound.html"><img src="../assets/img/2pastaConVegetales.png" alt="Pasta con vegetales"><p>Pasta con vegetales</p></a>
+                </div>
+
+                <div>
+                    <a class="textSobreImagen" href="../pages/notFound.html"><img src="../assets/img/2pizzaConPeperoni.png" alt="Pizza con peperoni"><p>Pizza con peperoni</p></a>
+                </div>
+                
+                <div>
+                    <a class="textSobreImagen" href="../pages/notFound.html"><img src="../assets/img/2panDeMolde.png" alt="Pan de molde"><p>Pan de molde</p></a>
+                </div>
+                
+                <div>
+                    <a class="textSobreImagen" href="../pages/notFound.html"><img src="../assets/img/2panCiabattaSinGluten.png" alt="Pan ciabatta sin gluten"><p>Pan ciabatta sin gluten</p></a>
+                </div>
+                
+                <div>
+                    <a class="textSobreImagen" href="../pages/notFound.html"><img src="../assets/img/2empanadasConPatatasYChampignon.png" alt="Empanadas con patatas y champignon"><p>Empanadas con patatas y champignon</p></a>
+                </div>
+                
+                <div>
+                    <a class="textSobreImagen" href="../pages/notFound.html"><img src="../assets/img/2canelones.png" alt="Canelones"><p>Canelones</p></a>
+                </div>
+            </section>
+        </section>
+
+
+    </main>
+
+
+
+    <!-- PIE DE PAGINA -->
+    <footer><!-- <footer> Define el pie de página. También se puede utilizar para definir el pie de otros elementos. -->
+
+        <section>
+            <ul class="navBar">
+                <li>
+                    <a href="../index.html"><p class="logoFooter">Celiacos felices</p></a>
+                </li>
+            </ul>
+        </section>
+
+
+        <section><!-- Accesos rapidos -->
+            <div>
+                <nav>
+                    <ul class="navBar">
+                        <li><a href="../pages/2Seccion1RecetasSaladas.html"><p class="saladas">Saladas</p></a></li>
+                        <li><a href="../pages/notFound.html"><p class="dulces">Dulces</p></a></li>
+                        <li><a href="../pages/notFound.html"><p class="sinLactosa">Sin Lactosa</p></a></li>
+                        <li><a href="../pages/notFound.html"><p class="sinAzucar">Sin Azucar</p></a></li>     
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <ul class="navBar">
+                        <li><a href=""><p class="veganas">Veganas</p></a></li>
+                        <li><a href="../pages/4AgregarRecetas.html"><p class="agregarReceta">Agregar receta</p></a></li>
+                        <li><a href="../pages/5VidaSinGluten.html"><p class="vidaSinGluten">Vida sin gluten</p></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+
+        <section><!-- Redes Sociales -->
+            <ul>
+                <li><a class="redesSociales" href="https://www.facebook.com/"><img src="../assets/img/footerFacebook.png" alt="facebook"><p>@celiacosfelices</p></a></li>
+
+                <li><a class="redesSociales" href="https://www.instagram.com/"><img src="../assets/img/footerInstagram.png" alt="facebook"><p>@celiacosfelices</p></a></li>
+
+                <li><a class="redesSociales" href="https://www.youtube.com/"><img src="../assets/img/footerYoutube.png" alt="facebook"><p>@celiacosfelices</p></a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
