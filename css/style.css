@@ -1,368 +1,71 @@
-    /********** TYPOGRAPHY **********/
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:ital@1&family=Katibeh&display=swap');
-/*IMPORTO TIPOGRAFIA DE GOOGLE FONTS*/
-
-*{
-padding: 0; /* Establece el espacio de relleno requerido por todos los lados de un elemento (top right bottom left)*/
-margin: 0; /*establece el margen para los cuatro lados*/
-box-sizing: border-box; /*indica cómo se deben calcular las medidas de un elemento - El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
-}
-
-/* Orden en cada sección
-1- Posicionamiento
-2- Modelo de caja
-3- Tipografía y texto
-4- Visual
-5- Miscelánea*/
-
-
-
-    /******************** HEADER ********************/
-
-header{/* Fondo del encabezado*/
-    position: absolute;
-    width: 1920px;
-    height: 100px;
-
-    background: #348888;
-}
-
-.logoHeader{/* Logo del encabezado */
-    position: absolute;
-
-    width: 104px;
-    height: 43px;
-
-    font-family: 'Katibeh';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 28px;
-    /* or 70% */
-
-    color: #FFFFFF;
-
-    top: -12px;
-    left: 60px;
-    list-style: none;
-    text-decoration: none;
-
-    display: flex; /*me dejo colocar un texto sobre otro*/
-}
-
-nav li{ /* Posicionamiento barra de navegación*/
-    position: relative;
-    left: 374px;
-
-    display: inline; /* ocupa el espacio que le corresponde solamente*/
-    margin: 0 0 0 60px
-}
-
-nav a{ /*Tipografia y texto barra de navegación*/
-    list-style: none;
-    text-decoration: none;
-    
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    align-items: center;
-
-    top: 28px;
-
-color: #FFFFFF;
-}
-
-.caja{/* Posicionamiento barra de navegación y logo*/
-    position: relative;
-    top: 28px;
-    margin: 0 auto; /* el navegador calcula segun la pantalla del usuario para centrar el encabezado*/
-
-}
-
-
-    /******************** FOOTER ********************/
-
-footer{/* Fondo del pie de pagina */
-    width: 1920px;
-    height: 257px;
-    background-color: #348888;;
-}
-
-.logoFooter{
-/* LOGO DEL FOOTER */
-    position: relative;
-    width: 296px;
-    height: 92px;
-    font-family: 'Katibeh';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 65px;
-    /* or 68% */
-
-    list-style: none;
-    text-decoration: none;
-
-    color: #FFFFFF;
-
-    top: 50px;
-    left: 200px;
-
-    display: flex; /*me dejo colocar un texto sobre otro*/
-}
-
-.navFooter1{
-
-}
-
-.navFooter2{
-    
-}
-
-.redesSociales{
-/*position: absolute;*/
-    list-style: none;
-    text-decoration: none;
-
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 50px;
-    /* or 156% */
-
-    display: flex;
-    align-items: center;
-
-    right: 313px;
-
-    color: #FFFFFF;    
-}
-
-    /******************** SIDEBAR ********************/
-
-
-
-
-    /******************** GENERAL ********************/
-
-body{/* Fondo del cuerpo de las paginas*/
-        background: #165f36;
-}
-
-.banner{
-    width: 100%;
-}
-
-h1{
-    /* TITULO */
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 115px;
-    align-items: center;
-    text-align: center;
-    
-    color: #F24405;
-}
-
-.h1Principal{
-    position: absolute;
-    width: 623px;
-    height: 66px;
-    left: 648px;
-    top: 795px;
-}
-
-h2{
-    /* SUBTITULOS */
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 77px;
-    align-items: center;
-    text-align: center;
-    
-    color: #FA7F08;
-}
-
-.h2MasPupulares{
-
-}
-
-.h2MasRecientes{
-    
-}
-
-.imagenesRecetasLista{
-    display: flex; /* ocupa el espacio que le corresponde solamente*/
-    margin: 30px
-}
-
-.textSobreImagen{
-    /* TEXTO SOBRE LAS IMAGENES DE RECETAS */
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 77px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    
-    color: #FFFFFF;
-}
-
-
-    /******************* HOME PAGE *******************/
-
-.FlexboxRecetas{/*Flexbox es una manera de maquetación.*/
-    display: flex; /*Flex (el que inicia): indicará que sus hijos serán "flexibles".*/
-    
-    /*
-    flex-direction: row;/*Elegir dirección vertical u horizontal.
-    flex-wrap: wrap;¿Se hará multilinea cuando llegue al límite? para hacer responsive y que los elementos se vayan acomodando
-    */
-    
-    flex-flow: row wrap;/*Forma reducidad de expresar flex-direction y flex-wrap*/
-
-    justify-content: center;/*Me refiero al movimiento horizontal Eje x.*/
-
-    align-items: flex-start;/*Me refiero al movimiento vertical Eje y.*/
-    align-content: flex-start;
-    
-    gap: 30px;/*Separa elementos tanto en filas como columnas (row-column)*/
-}
-
-.imagenesRecetasLista:hover{
-    opacity: 0.5;
-    transition: 500ms;
-}
-
-
-    /****************** SECTION PAGE ******************/
-
-.subSecciones{/* Sub secciones dentro de secciones*/
-    /*position: absolute;*/
-    
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 28px;
-    /* or 70% */
-    
-    color: #000000;
-}
-
-
-
-
-    /****************** RECIPES PAGE ******************/
-
-.caracteristicasDeReceta{
-    /* CARACTERISTICAS TIEMPO - PORCIONES - DIFICULTAD DE RECETAS*/
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 28px;
-    /* or 88% */
-    
-    color: #000000;
-}
-
-.textoDeRecetasIngredientes{
-    /* INGREDIENTES DE LAS RECETAS */
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    
-    align-items: center;
-    
-    color: #1E1E1E;
-}
-
-.textoDeRecetasPasos{
-    /* PASOS DE LAS RECETAS */
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    width: 844px;
-    align-items: center;
-    
-    color: #1E1E1E;
-}
-
-
-    /**************** ADD RECIPES PAGE ****************/
-
-
-
-
-    /************** GLUTEN-FREE LIFE PAGE **************/
-
-.articulo{  
-    /* TITULOS DE LOS ARTICULOS DE VIDA SIN GLUTEN */
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    display: flex;
-    align-items: center;
-    
-    color: #FA7F08;
-}
-
-.botonSeguirLeyendo{
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    /* identical to box height */
-    
-    color: #FFFFFF;
-}
-
-.articuloParrafo{   
-    /* PARRAFO DE LOS ARTICULOS DE VIDA SIN GLUTEN */
-    width: 365px;
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    
-    color: #1E1E1E;
-}
-
-
-    /********************* OTHERS **********************/
-
-
-
-.notFound {
-    background-size: cover;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-}
-
-/*Degrade negro a blanco para videos
-section {
-    background-image: linear-gradient(blac,whit);}*/
-
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:ital@1&family=Katibeh&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  /*establece el margen para los cuatro lados*/
+  padding: 0;
+  /* Establece el espacio de relleno requerido por todos los lados de un elemento (top right bottom left)*/
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  /*indica cómo se deben calcular las medidas de un elemento - El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/ }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/******************** HEADER ********************/
+header {
+  background: #348888;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+  .navBar li {
+    list-style: none; }
+    .navBar li a {
+      font-family: 'Barlow Condensed';
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 32px; }
+
+/*hola*/
