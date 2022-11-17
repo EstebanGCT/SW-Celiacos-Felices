@@ -1,0 +1,16 @@
+header{
+    background: $background-principal;
+    @include props-flex(row,flex-end,center);
+}
+.navBar{
+    @include props-flex(column,center,flex-end);
+    li{
+        list-style: none;
+        a{
+            font-family: 'Barlow Condensed';
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 32px;
+        }
+    }
+}
