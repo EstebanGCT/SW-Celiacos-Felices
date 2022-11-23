@@ -1,0 +1,29 @@
+footer{/* Fondo del pie de pagina */
+    width: 1920px;
+    height: 257px;
+    background-color: #348888;
+}
+
+.logoFooter{
+/* LOGO DEL FOOTER */
+    position: relative;
+    width: 296px;
+    height: 92px;
+    font-family: 'Katibeh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 65px;
+    /* or 68% */
+
+    list-style: none;
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    top: 50px;
+    left: 200px;
+
+    display: flex; /*me dejo colocar un texto sobre otro*/
+}
+

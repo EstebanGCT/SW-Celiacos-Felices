@@ -22,13 +22,15 @@
 
 
     <header><!-- Determina la cabecera de una web o de un elemento. -->
-        <div><!-- <section> Define secciones de una web. -->
-            <div>
-                <a href="#" class="logoHeader">Celiacos felices</a>
-            </div>
+        <div class="left-section">
+            <ul>
+                <li class="logo"><a href="#"><img src="./assets/img/LOGO.svg" alt="Logo"></a></li>
+            </ul>
+        </div>
 
+        <div class="center-section">
             <nav><!-- <nav> Especifica una sección que contiene un menú de navegación. -->
-                <ul class="navBar"><!-- <ul> Determina una lista de artículos sin orden. -->
+                <ul class= "navBar"><!-- <ul> Determina una lista de artículos sin orden. -->
                     <li><a href="./pages/2Seccion1RecetasSaladas.html">Saladas</a></li><!-- <li> Define un elemento de una lista.-->
                     <li><a href="./pages/notFound.html">Dulces</a></li>
                     <li><a href="./pages/notFound.html">Sin Lactosa</a></li>
@@ -39,7 +41,12 @@
                 </ul>
             </nav>
         </div>
+
+        <div class="right-section">
+            <li class="cuenta"><a href="#"><img src="./assets/img/CUENTA.svg" alt="Cuenta"></a></li>
+        </div>
     </header>
+
 
 
     <main class="container"><!-- <main> Determina el contenido principal del documento. Solo puede existir un elemento <main> en el documento. -->
@@ -173,49 +180,45 @@
     </aside>-->
 
 
-
     <footer><!-- <footer> Define el pie de página. También se puede utilizar para definir el pie de otros elementos. -->
 
-        <section>
-            <p>
-                <a href="#" class="logoFooter">Celiacos felices</a>
-            </p>
-        </section>
-
-
-        <section><!-- Accesos rapidos -->
-            <div>
-                <nav>
-                    <ul class="navFooter1">
-                        <li><a href="./pages/2Seccion1RecetasSaladas.html">Saladas</a></li>
-                        <li><a href="./pages/notFound.html">Dulces</a></li>
-                        <li><a href="./pages/notFound.html">Sin Lactosa</a></li>
-                        <li><a href="./pages/notFound.html">Sin Azucar</a></li>     
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <nav>
-                    <ul class="navFooter2">
-                        <li><a href="./pages/notFound.html">Veganas</a></li>
-                        <li><a href="./pages/4AgregarRecetas.html">Agregar receta</a></li>
-                        <li><a href="./pages/5VidaSinGluten.html">Vida sin gluten</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-
-
-        <section><!-- Redes Sociales -->
+        <div>
             <ul>
-                <li><a class="redesSociales" href="https://www.facebook.com/"><img src="./assets/img/footerFacebook.png" alt="facebook">@celiacosfelices</a></li>
-
-                <li><a class="redesSociales" href="https://www.instagram.com/"><img src="./assets/img/footerInstagram.png" alt="facebook">@celiacosfelices</a></li>
-
-                <li><a class="redesSociales" href="https://www.youtube.com/"><img src="./assets/img/footerYoutube.png" alt="facebook">@celiacosfelices</a></li>
+                <li><a href="#" class="logoFooter">Celiacos felices</a></li>
             </ul>
-        </section>
+        </div>
+
+        <div>
+            <nav>
+                <ul class="navFooter">
+                    <li><a href="./pages/2Seccion1RecetasSaladas.html">Saladas</a></li>
+                    <li><a href="">Dulces</a></li>
+                    <li><a href="">Sin Lactosa</a></li>
+                    <li><a href="">Sin Azucar</a></li>     
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul class="navFooter">
+                    <li><a href="./pages/notFound.html">Veganas</a></li>
+                    <li><a href="./pages/4AgregarRecetas.html">Agregar receta</a></li>
+                    <li><a href="./pages/5VidaSinGluten.html">Vida sin gluten</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <ul>
+                <li><a class="redesSociales" href="https://www.facebook.com/"><img src="./assets/img/footerFacebook.png" alt="facebook">celiacosfelices</a></li>
+
+                <li><a class="redesSociales" href="https://www.instagram.com/"><img src="./assets/img/footerInstagram.png" alt="facebook">celiacosfelices</a></li>
+
+                <li><a class="redesSociales" href="https://www.youtube.com/"><img src="./assets/img/footerYoutube.png" alt="facebook">celiacosfelices</a></li>
+            </ul>
+        </div>
     </footer>
+
 </body>
 </html>
 

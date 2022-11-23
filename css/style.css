@@ -33,7 +33,8 @@ body {
   line-height: 1; }
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+  text-decoration: none; }
 
 blockquote, q {
   quotes: none; }
@@ -49,23 +50,76 @@ table {
 
 /******************** HEADER ********************/
 header {
-  background: #348888;
+  /* Fondo del encabezado*/
+  width: 100%;
+  background-color: #CEF5F1;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 12vh;
+  grid-template-areas: "left-section" "center-section" "right-section"; }
+  header nav {
+    width: 100%; }
+    header nav ul {
+      width: 100%; }
+      header nav ul li {
+        /* Posicionamiento barra de navegación*/
+        display: inline;
+        /* ocupa el espacio que le corresponde solamente*/ }
+        header nav ul li a {
+          /*Tipografia y texto barra de navegación*/
+          list-style: none;
+          text-decoration: none;
+          font-family: 'Barlow Condensed';
+          font-size: 32px;
+          color: #348888; }
+
+.left-section {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center; }
+
+.center-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center; }
 
 .navBar {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end; }
-  .navBar li {
-    list-style: none; }
-    .navBar li a {
-      font-family: 'Barlow Condensed';
-      text-decoration: none;
-      color: #FFFFFF;
-      font-size: 32px; }
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
 
 /*hola*/
+/******************** FOOTER ********************/
+footer {
+  /* Fondo del pie de pagina */
+  width: 1920px;
+  height: 257px;
+  background-color: #348888; }
+
+.logoFooter {
+  /* LOGO DEL FOOTER */
+  position: relative;
+  width: 296px;
+  height: 92px;
+  font-family: 'Katibeh';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 65px;
+  /* or 68% */
+  list-style: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  top: 50px;
+  left: 200px;
+  display: flex;
+  /*me dejo colocar un texto sobre otro*/ }

@@ -1,8 +1,10 @@
-@import "./utilities/variables.scss";
-@import "./utilities/mixins.scss";
 @import "./base/reset";
 @import "./base/typo";
-
+@import "./utilities/variables.scss";
+@import "./utilities/mixins.scss";
 /******************** HEADER ********************/
 @import "./layout/header.scss" ;
 @import "./layout/main-1Index.scss";
+
+/******************** FOOTER ********************/
+@import "./layout/footer.scss";

@@ -1,8 +1,8 @@
-@mixin props-flex ($direction,$justify,$align) {
+@mixin props-flex ($direction,$justify,$alignItems) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
-    align-items: $align;
+    align-items: $alignItems;
 }
 
 @mixin medidas($width,$height,$padding,$margin){
@@ -11,3 +11,24 @@
     padding: $padding;
     margin: $margin;
 }
+
+@mixin typo($listStyle,$textDecoration,$fontFamily,$fontStyle){
+    list-style: $listStyle;
+    text-decoration: $textDecoration;
+    font-family: $fontFamily;
+    font-style: $fontStyle;
+}
+
+@mixin grid ($columns,$row){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $row;
+}
+
+@mixin box ($width,$height,$margin,$padding,$border,$borderD,$borderC) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+    border: $border $borderD $borderC;
+  }
