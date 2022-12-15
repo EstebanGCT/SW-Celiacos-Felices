@@ -15,36 +15,39 @@
     <link rel="stylesheet" href="./css/style.css"><!-- <link> Utilizada para enlazar documentos externos, por ejemplo CSS.-->
 
     <link rel="shortcut icon" href="./assets/img/shortcurIcon.png" type="image/x-icon">
+
+    <script defer src="./javascript/header.js"></script>
 </head>
 
 
 <body><!-- <body> Representa el contenido principal de un documento HTML. Sólo puede existir un elemento <body> en el documento. -->
 
 
-    <header><!-- Determina la cabecera de una web o de un elemento. -->
-        <div class="left-section">
-            <ul>
-                <li class="logo"><a href="#"><img src="./assets/img/LOGO.svg" alt="Logo"></a></li>
+    <header class="header"><!-- Determina la cabecera de una web o de un elemento. -->
+
+        <nav class="nav">
+            <a class="logo-position" href="#"><img class="logo nav-link" src="./assets/img/Celiacos Felices.png" alt="LOGO"></a>
+
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Saladas</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Dulces</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Sin Lactosa</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Sin Azucar</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Veganas</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Agregar Receta</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Vida sin gluten</a></li>
             </ul>
-        </div>
-
-        <div class="center-section">
-            <nav><!-- <nav> Especifica una sección que contiene un menú de navegación. -->
-                <ul class= "navBar"><!-- <ul> Determina una lista de artículos sin orden. -->
-                    <li><a href="./pages/2Seccion1RecetasSaladas.html">Saladas</a></li><!-- <li> Define un elemento de una lista.-->
-                    <li><a href="./pages/notFound.html">Dulces</a></li>
-                    <li><a href="./pages/notFound.html">Sin Lactosa</a></li>
-                    <li><a href="./pages/notFound.html">Sin Azucar</a></li>
-                    <li><a href="./pages/notFound.html">Veganas</a></li>
-                    <li><a href="./pages/4AgregarRecetas.html">Agregar receta</a></li>
-                    <li><a href="./pages/5VidaSinGluten.html">Vida sin gluten</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="right-section">
-            <li class="cuenta"><a href="#"><img src="./assets/img/CUENTA.svg" alt="Cuenta"></a></li>
-        </div>
+            
+            <div class="cuenta-menu-position">
+                
+                <button class="nav-toggle-cuenta">
+                    <a href="#"><img class="cuenta nav-link" src="./assets/img/cuenta.png" alt="CUENTA"></a>
+                </button>
+                
+                <button class="nav-toggle-menu nav-toggle-mobile" aria-label="Abrir menú">
+                    <a href="#"><img class="menu-mini nav-link" src="./assets/img/menu.png" alt="MENU"></a></div>
+                </button>
+        </nav>
     </header>
 
 
