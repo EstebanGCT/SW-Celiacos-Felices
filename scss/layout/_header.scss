@@ -6,7 +6,7 @@
     left: 0;
 }
 
-.nav {
+.nav-header {
     height: 100px;
     width: 100%;
     display: grid;
@@ -18,23 +18,23 @@
     "right-section"
 }
 
-.nav-link{
+.nav-link-header {
     color: #348888;
     text-decoration: none;
 }
 
-.logo{
+.logo-header {
     width: 170px;
     height: 68.53px;
 }
 
-.logo-position{
+.logo-position-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-menu{
+.nav-menu-header {
     position: relative;
     display: flex;
     list-style: none;
@@ -44,259 +44,260 @@
     overflow-y: unset;
 }
 
-.nav-menu-item{
+.nav-menu-item-header {
     font-family: 'Barlow Condensed';
     font-size: 32px;
     margin: 0 10px;
     width: max-content;
 }
 
-.nav-menu-link:hover{
+.nav-menu-link:hover {
     color:aqua;
     transition: 0.5s;
 }
 
-.cuenta{
+.cuenta {
     width: 50px;
     height: 50px;
     margin-left: 15px;
 }
 
-.menu-mini{
+.menu-mini {
     width: 50px;
     height: 50px;
     margin-left: 10px;
 }
 
-.cuenta-menu-position{
+.cuenta-menu-position {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.nav-toggle-cuenta{
+.nav-toggle-cuenta {
     background: none;
     border: none;
 }
 
-.nav-toggle-menu{
+.nav-toggle-menu {
     background: none;
     border: none;
 }
 
-.nav-toggle-mobile{
+.nav-toggle-mobile {
     display: none;
 }
 
-.nav-toggle-cuenta:focus:not(:focus-visible){
+.nav-toggle-cuenta:focus:not(:focus-visible) {
     outline: none;
 }
 
-.nav-toggle-menu:focus:not(:focus-visible){
+.nav-toggle-menu:focus:not(:focus-visible) {
     outline: none;
 }
 
 
+@media (min-width: 320px) {
 
-@media (min-width: 320px){
-
-    .nav {
-        height: 100px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px;
-        grid-template-areas:
-        "left-section"
-        "right-section"
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        background-color: #348888;
-        position:fixed;
-        left: 0;
-        top: 100px;
-        width: 100%;
-        padding: 15% 0;
-        height: calc(100% - 100px);
-        overflow-y: auto;
-        left: 100%;
-        transition: left 0.3s;
-    }
-
-    .nav-link{
-        color: white;
-    }
-
-    .logo{
-        margin-left: 6px;
-    }
-
-    .logo-position{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .cuenta-menu-position{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .nav-toggle-mobile{
-        display: block;
-    }
-
-    .cuenta{
-        width: 50px;
-        height: 50px;
-        margin-left: 20px;
-    }
-
-    .menu-mini{
-        width: 50px;
-        height: 50px;
-        margin-left: 0px;
-    }
-
-    .nav-menu_visible{
-        left: 0;
-    }
+.nav-header {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "left-section"
+    "right-section"
 }
 
-@media (min-width: 480px){
-
-    .nav {
-        height: 100px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px;
-        grid-template-areas:
-        "left-section"
-        "right-section"
-    }
-
-    .nav-menu{
-        flex-direction: column;
-        align-items: center;
-        background-color: #348888;
-        position:fixed;
-        left: 0;
-        top: 100px;
-        width: 100%;
-        padding: 5% 0;
-        height: calc(100% - 100px);
-        overflow-y: auto;
-        left: 100%;
-        transition: left 0.3s;
-    }
-
-    .nav-link{
-        color: white;
-    }
-
-    .logo{
-        margin-left: 25px;
-    }
-
-    .logo-position{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .cuenta-menu-position{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .nav-toggle-mobile{
-        display: block;
-    }
-
-    .cuenta{
-        width: 50px;
-        height: 50px;
-        
-    }
-    
-    .menu-mini{
-        width: 50px;
-        height: 50px;
-        margin-right: 45px;
-    }
-
-    .nav-menu_visible{
-        left: 0;
-    }
+.nav-menu-header {
+    flex-direction: column;
+    align-items: center;
+    background-color: #348888;
+    position:fixed;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    padding: 15% 0;
+    height: calc(100% - 100px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
 }
 
-@media (min-width: 1280px){
+.nav-link-header {
+    color: white;
+}
 
-    .nav {
-        height: 100px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 5fr 1fr;
-        grid-template-rows: 100px;
-        grid-template-areas:
-        "left-section"
-        "center-section"
-        "right-section"
-    }
+.logo-header {
+    margin-left: 6px;
+}
 
-    .nav-menu-item{
-        font-family: 'Barlow Condensed';
-        font-size: 32px;
-        margin: 0 10px;
-        width: max-content;
-    }
+.logo-position-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-    .nav-menu{
-        position: relative;
-        flex-direction: row;
-        background-color: #CEF5F1;
-        top: 0px;
-        padding: 0;
-        overflow-y: unset;
-        height: 100px;
-        left: 0%;
-    }
+.cuenta-menu-position {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
-    .nav-link{
-        color: #348888;
-    }
+.nav-toggle-mobile {
+    display: block;
+}
 
-    .logo-position{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.cuenta {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
 
-    .cuenta-menu-position{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+.menu-mini {
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+}
 
-    .nav-toggle-mobile{
-        display: none;
-    }
+.nav-menu_visible {
+    left: 0;
+}
+}
 
-    .cuenta{
-        width: 50px;
-        height: 50px;
-        margin-left: 15px;
-    }
+
+@media (min-width: 480px) {
+
+.nav-header {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "left-section"
+    "right-section"
+}
+
+.nav-menu-header {
+    flex-direction: column;
+    align-items: center;
+    background-color: #348888;
+    position:fixed;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    padding: 5% 0;
+    height: calc(100% - 100px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+}
+
+.nav-link-header {
+    color: white;
+}
+
+.logo-header {
+    margin-left: 25px;
+}
+
+.logo-position-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cuenta-menu-position {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-toggle-mobile {
+    display: block;
+}
+
+.cuenta {
+    width: 50px;
+    height: 50px;
     
-    .menu-mini{
-        width: 50px;
-        height: 50px;
-        margin-left: 10px;
-    }
+}
+
+.menu-mini {
+    width: 50px;
+    height: 50px;
+    margin-right: 45px;
+}
+
+.nav-menu_visible {
+    left: 0;
+}
+}
+
+
+@media (min-width: 1280px) {
+
+.nav-header {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "left-section"
+    "center-section"
+    "right-section"
+}
+
+.nav-menu-item-header {
+    font-family: 'Barlow Condensed';
+    font-size: 32px;
+    margin: 0 10px;
+    width: max-content;
+}
+
+.nav-menu-header {
+    position: relative;
+    flex-direction: row;
+    background-color: #CEF5F1;
+    top: 0px;
+    padding: 0;
+    overflow-y: unset;
+    height: 100px;
+    left: 0%;
+}
+
+.nav-link-header {
+    color: #348888;
+}
+
+.logo-position-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuenta-menu-position {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-toggle-mobile {
+    display: none;
+}
+
+.cuenta {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+.menu-mini {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
 }
