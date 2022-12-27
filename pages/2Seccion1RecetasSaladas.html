@@ -21,27 +21,32 @@
 
 <body><!-- <body> Representa el contenido principal de un documento HTML. Sólo puede existir un elemento <body> en el documento. -->
 
+    <header class="header"><!-- Determina la cabecera de una web o de un elemento. -->
 
-    <header><!-- Determina la cabecera de una web o de un elemento. -->
-        <div class="caja">
-            <div><!-- <section> Define secciones de una web. -->
-                <a href="../index.html" class="logoHeader">Celiacos felices</a>
-            </div>
+        <nav class="nav-header">
+            <a class="logo-position-header" href="#"><img class="logo-header nav-link-header" src="./assets/img/Celiacos Felices.png" alt="LOGO"></a>
 
-            <nav><!-- <nav> Especifica una sección que contiene un menú de navegación. -->
-                <ul ><!-- <ul> Determina una lista de artículos sin orden. -->
-                    <li><a href="../pages/2Seccion1RecetasSaladas.html">Saladas</a></li><!-- <li> Define un elemento de una lista.-->
-                    <li><a href="../pages/notFound.html">Dulces</a></li>
-                    <li><a href="./pages/notFound.html">Sin Lactosa</a></li>
-                    <li><a href="../pages/notFound.html">Sin Azucar</a></li>
-                    <li><a href="../pages/notFound.html">Veganas</a></li>
-                    <li><a href="../pages/4AgregarRecetas.html">Agregar receta</a></li>
-                    <li><a href="../pages/5VidaSinGluten.html">Vida sin gluten</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul class="nav-menu-header">
+                <li class="nav-menu-item-header"><a href="./pages/2Seccion1RecetasSaladas.html" class="nav-menu-link nav-link-header">Saladas</a></li>
+                <li class="nav-menu-item-header"><a href="" class="nav-menu-link nav-link-header">Dulces</a></li>
+                <li class="nav-menu-item-header"><a href="" class="nav-menu-link nav-link-header">Sin Lactosa</a></li>
+                <li class="nav-menu-item-header"><a href="" class="nav-menu-link nav-link-header">Sin Azucar</a></li>
+                <li class="nav-menu-item-header"><a href="" class="nav-menu-link nav-link-header">Veganas</a></li>
+                <li class="nav-menu-item-header"><a href="" class="nav-menu-link nav-link-header">Agregar Receta</a></li>
+                <li class="nav-menu-item-header"><a href="" class="nav-menu-link nav-link-header">Vida sin gluten</a></li>
+            </ul>
+            
+            <div class="cuenta-menu-position">
+                
+                <button class="nav-toggle-cuenta">
+                    <a href="#"><img class="cuenta nav-link-header" src="./assets/img/cuenta.png" alt="CUENTA"></a>
+                </button>
+                
+                <button class="nav-toggle-menu nav-toggle-mobile" aria-label="Abrir menú">
+                    <a href="#"><img class="menu-mini nav-link-header" src="./assets/img/menu.png" alt="MENU"></a></div>
+                </button>
+        </nav>
     </header>
-
 
 
     <main><!-- <main> Determina el contenido principal del documento. Solo puede existir un elemento <main> en el documento. -->
@@ -129,49 +134,41 @@
     </main>
 
 
-    <!-- PIE DE PAGINA -->
+    <footer class="footer"><!-- <footer> Define el pie de página. También se puede utilizar para definir el pie de otros elementos. -->
 
-    <footer><!-- <footer> Define el pie de página. También se puede utilizar para definir el pie de otros elementos. -->
+        <nav class="nav-footer">
+            <a class="logo-position-footer left-section" href="#"><img class="logo-footer nav-link-footer" src="./assets/img/Celiacos Felices.png" alt="LOGO"></a>
 
-        <section>
-            <p>
-                <a href="../index.html" class="logoFooter">Celiacos felices</a>
-            </p>
-        </section>
+            <div class="right-section">
+                <ul class="nav-menu-footer left-secDesktop">
+                    <li class="nav-menu-item-footer"><a href="" class="nav-link-footer">Saladas</a></li>
+                    <li class="nav-menu-item-footer"><a href="" class="nav-link-footer">Dulces</a></li>
+                    <li class="nav-menu-item-footer"><a href="" class="nav-link-footer">Sin Lactosa</a></li>
+                    <li class="nav-menu-item-footer"><a href="" class="nav-link-footer">Sin Azucar</a></li>
+                </ul>
+                    
+                <ul class="nav-menu-footer center-secDesktop">
+                    <li class="nav-menu-item-footer"><a href="" class="nav-link-footer">Veganas</a></li>
+                    <li class="nav-menu-item-footer"><a href="" class="nav-link-footer">Agregar Receta</a></li>
+                    <li class="nav-menu-item-footer"><a href="" class="nav-link-footer">Vida sin gluten</a></li>
+                </ul>
+                
+                <div class="botones-position right-secDesktop">
+                    
+                    <button class="navfooter-boton-redes">
+                        <a href="www.instagram.com" class="textoRedes"><img class="redes" src="./assets/img/footerInstagram.png" alt="Instagram"><p class="min_footer">Instagram</p></a>
+                    </button>
+                    
+                    <button class="navfooter-boton-redes" aria-label="Abrir menú">
+                        <a href="www.facebook.com" class="textoRedes"><img class="redes" src="./assets/img/footerFacebook.png" alt="Facebook"><p class="min_footer">Facebook</p></a>
+                    </button>
 
-
-        <section><!-- Accesos rapidos -->
-            <div>
-                <nav>
-                    <ul class="navFooter1">
-                        <li><a href="../pages/2Seccion1RecetasSaladas.html">Saladas</a></li>
-                        <li><a href="../pages/notFound.html">Dulces</a></li>
-                        <li><a href="../pages/notFound.html">Sin Lactosa</a></li>
-                        <li><a href="../pages/notFound.html">Sin Azucar</a></li>     
-                    </ul>
-                </nav>
+                    <button class="navfooter-boton-redes" aria-label="Abrir menú">
+                        <a href="www.youtube.com" class="textoRedes"><img class="redes" src="./assets/img/footerYoutube.png" alt="Youtube"><p class="min_footer">Youtube</p></a>
+                    </button>
+                </div>
             </div>
-            <div>
-                <nav>
-                    <ul class="navFooter2">
-                        <li><a href="../pages/notFound.html">Veganas</a></li>
-                        <li><a href="../pages/4AgregarRecetas.html">Agregar receta</a></li>
-                        <li><a href="../pages/5VidaSinGluten.html">Vida sin gluten</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-
-
-        <section><!-- Redes Sociales -->
-            <ul>
-                <li><a class="redesSociales" href="https://www.facebook.com/"><img src="../assets/img/footerFacebook.png" alt="facebook">@celiacosfelices</a></li>
-
-                <li><a class="redesSociales" href="https://www.instagram.com/"><img src="../assets/img/footerInstagram.png" alt="facebook">@celiacosfelices</a></li>
-
-                <li><a class="redesSociales" href="https://www.youtube.com/"><img src="../assets/img/footerYoutube.png" alt="facebook">@celiacosfelices</a></li>
-            </ul>
-        </section>
+        </nav>
     </footer>
 
 </body>

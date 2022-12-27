@@ -3,38 +3,8 @@
 @import "./utilities/variables.scss";
 @import "./utilities/mixins.scss";
 
-
-/********************* BODY *********************/
-@import "./layout/body";
-
-
-/******************** HEADER ********************/
-@import "./layout/header.scss" ;
-
-
-/************* MAIN INDEX-HOMEPAGE **************/
+@import "./layout/header";
 @import "./layout/main-1HomePageIndex";
+@import "./layout/footer";
 
-
-/*************** TIPOS-DE-RECETAS ***************/
-@import "./layout/main-2TiposDeRecetas";
-
-
-/******************** RECETA ********************/
-@import "./layout/main-3Receta";
-
-
-/**************** AGREGAR-RECETA ****************/
-@import "./layout/main-4AgregarReceta";
-
-
-/*************** VIDA-SIN-GLUTEN ****************/
-@import "./layout/main-5BlogVidaSinGluten";
-
-
-/******************** FOOTER ********************/
-@import "./layout/footer.scss";
-
-
-/********************* ASIDE *********************/
 @import "./layout/aside";

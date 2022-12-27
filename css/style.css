@@ -48,13 +48,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/********************* BODY *********************/
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
-
-/******************** HEADER ********************/
 .header {
   background-color: #CEF5F1;
   height: 100px;
@@ -269,12 +262,563 @@ body {
     margin-left: 10px; } }
 
 /************* MAIN INDEX-HOMEPAGE **************/
-/*hola*/
-/*************** TIPOS-DE-RECETAS ***************/
-/******************** RECETA ********************/
-/**************** AGREGAR-RECETA ****************/
-/*************** VIDA-SIN-GLUTEN ****************/
-/******************** FOOTER ********************/
+@media (min-width: 320px) {
+  .banner {
+    width: 100%; }
+  .titulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    color: #F24405; }
+  .subtitulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FA7F08; }
+  .seisRecetas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top section" "center-section" "down-section";
+    margin-bottom: 40px; }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .center-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .down-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .containerImgText {
+    position: relative;
+    text-align: center;
+    margin: 5px; }
+  .opacidadTextoImagen {
+    background-color: #348888;
+    height: 30px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 1.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .imgUno {
+    width: 260px;
+    height: 100px; }
+  .imgDos {
+    width: 260px;
+    height: 100px; }
+  .imgTres {
+    width: 260px;
+    height: 100px; }
+  .imgCuatro {
+    width: 260px;
+    height: 100px; }
+  .imgCinco {
+    width: 260px;
+    height: 100px; }
+  .imgSeis {
+    width: 260px;
+    height: 100px; }
+  .imgShadow:hover {
+    opacity: 0.5;
+    transition: 500ms; }
+  .textSobreImagen {
+    /* TEXTO SOBRE LAS IMAGENES DE RECETAS */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    color: #ffffff; } }
+
+@media (min-width: 480px) {
+  .titulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    color: #F24405; }
+  .subtitulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px 35px 0px;
+    color: #FA7F08; }
+  .seisRecetas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top section" "center-section" "down-section";
+    margin-bottom: 60px; }
+  .containerImgText {
+    position: relative;
+    text-align: center;
+    margin: 6px; }
+  .opacidadTextoImagen {
+    background-color: #348888;
+    height: 41px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 1.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .imgUno {
+    width: 390px;
+    height: 150px; }
+  .imgDos {
+    width: 390px;
+    height: 150px; }
+  .imgTres {
+    width: 390px;
+    height: 150px; }
+  .imgCuatro {
+    width: 390px;
+    height: 150px; }
+  .imgCinco {
+    width: 390px;
+    height: 150px; }
+  .imgSeis {
+    width: 390px;
+    height: 150px; }
+  .textSobreImagen {
+    /* TEXTO SOBRE LAS IMAGENES DE RECETAS */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    color: #ffffff; } }
+
+@media (min-width: 600px) {
+  .titulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    color: #F24405; }
+  .subtitulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px 40px 0px;
+    color: #FA7F08; }
+  .seisRecetas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top section" "center-section" "down-section";
+    margin-bottom: 100px; }
+  .containerImgText {
+    position: relative;
+    text-align: center;
+    margin: 10px; }
+  .opacidadTextoImagen {
+    background-color: #348888;
+    height: 49px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 1.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .imgUno {
+    width: 480px;
+    height: 184px; }
+  .imgDos {
+    width: 480px;
+    height: 184px; }
+  .imgTres {
+    width: 480px;
+    height: 184px; }
+  .imgCuatro {
+    width: 480px;
+    height: 184px; }
+  .imgCinco {
+    width: 480px;
+    height: 184px; }
+  .imgSeis {
+    width: 480px;
+    height: 184px; }
+  .textSobreImagen {
+    /* TEXTO SOBRE LAS IMAGENES DE RECETAS */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-size: 29px;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    color: #ffffff; } }
+
+@media (min-width: 768px) {
+  .titulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    color: #F24405; }
+  .subtitulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+    color: #FA7F08; }
+  .seisRecetas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top section" "center-section" "down-section";
+    margin-bottom: 130px; }
+  .containerImgText {
+    position: relative;
+    text-align: center;
+    margin: 15px; }
+  .opacidadTextoImagen {
+    background-color: #348888;
+    height: 57px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 1.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .imgUno {
+    width: 620px;
+    height: 238px; }
+  .imgDos {
+    width: 620px;
+    height: 238px; }
+  .imgTres {
+    width: 620px;
+    height: 238px; }
+  .imgCuatro {
+    width: 620px;
+    height: 238px; }
+  .imgCinco {
+    width: 620px;
+    height: 238px; }
+  .imgSeis {
+    width: 620px;
+    height: 238px; }
+  .textSobreImagen {
+    /* TEXTO SOBRE LAS IMAGENES DE RECETAS */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-size: 35px;
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    color: #ffffff; } }
+
+@media (min-width: 1024px) {
+  .titulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    color: #F24405; }
+  .subtitulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0px 50px 0px;
+    color: #FA7F08; }
+  .seisRecetas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top section" "center-section" "down-section";
+    margin-bottom: 140px; }
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .center-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .down-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .containerImgText {
+    position: relative;
+    text-align: center;
+    margin: 15px; }
+  .opacidadTextoImagen {
+    background-color: #348888;
+    height: 50px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 1.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .imgUno {
+    width: 500px;
+    height: 192px; }
+  .imgDos {
+    width: 311px;
+    height: 192px; }
+  .imgTres {
+    width: 311px;
+    height: 192px; }
+  .imgCuatro {
+    width: 500px;
+    height: 192px; }
+  .imgCinco {
+    width: 311px;
+    height: 192px; }
+  .imgSeis {
+    width: 500px;
+    height: 192px; }
+  .imgShadow:hover {
+    opacity: 0.5;
+    transition: 500ms; }
+  .textSobreImagen {
+    /* TEXTO SOBRE LAS IMAGENES DE RECETAS */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-size: 41px;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    color: #ffffff; } }
+
+@media (min-width: 1280px) {
+  .titulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 78px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    color: #F24405; }
+  .subtitulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0px 50px 0px;
+    color: #FA7F08; }
+  .seisRecetas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top section" "center-section" "down-section";
+    margin-bottom: 170px; }
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .center-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .down-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .containerImgText {
+    position: relative;
+    text-align: center;
+    margin: 15px; }
+  .opacidadTextoImagen {
+    background-color: #348888;
+    height: 68px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .imgUno {
+    width: 700px;
+    height: 269px; }
+  .imgDos {
+    width: 436px;
+    height: 269px; }
+  .imgTres {
+    width: 436px;
+    height: 269px; }
+  .imgCuatro {
+    width: 700px;
+    height: 269px; }
+  .imgCinco {
+    width: 700px;
+    height: 269px; }
+  .imgSeis {
+    width: 436px;
+    height: 269px; }
+  .imgShadow:hover {
+    opacity: 0.5;
+    transition: 500ms; }
+  .textSobreImagen {
+    /* TEXTO SOBRE LAS IMAGENES DE RECETAS */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-size: 52px;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    color: #ffffff; } }
+
+@media (min-width: 1920px) {
+  .titulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 60px;
+    align-items: center;
+    text-align: center;
+    margin-top: 112px;
+    color: #F24405; }
+  .subtitulo {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    margin: 63px 0px 120px 0px;
+    color: #FA7F08; }
+  .seisRecetas {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top section" "center-section" "down-section";
+    margin-bottom: 181px; }
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .center-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .down-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .containerImgText {
+    position: relative;
+    text-align: center;
+    margin: 60px; }
+  .opacidadTextoImagen {
+    background-color: #348888;
+    height: 83px;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .imgUno {
+    width: 900px;
+    height: 345px; }
+  .imgDos {
+    width: 560px;
+    height: 345px; }
+  .imgTres {
+    width: 560px;
+    height: 345px; }
+  .imgCuatro {
+    width: 900px;
+    height: 345px; }
+  .imgCinco {
+    width: 900px;
+    height: 345px; }
+  .imgSeis {
+    width: 560px;
+    height: 345px; }
+  .imgShadow:hover {
+    opacity: 0.5;
+    transition: 500ms; }
+  .textSobreImagen {
+    /* TEXTO SOBRE LAS IMAGENES DE RECETAS */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-size: 64px;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    color: #ffffff; } }
+
 @media (min-width: 320px) {
   .footer {
     height: 257px;
@@ -291,8 +835,8 @@ body {
     color: #348888;
     text-decoration: none; }
   .logo-footer {
-    width: 160px;
-    height: 58.53px; }
+    width: 161.5px;
+    height: 64.98px; }
   .logo-position-footer {
     display: flex;
     flex-direction: row;
@@ -327,18 +871,18 @@ body {
 
 @media (min-width: 480px) {
   .logo-footer {
-    width: 180px;
-    height: 78.53px; } }
+    width: 182.75px;
+    height: 73.53px; } }
 
 @media (min-width: 600px) {
   .logo-footer {
-    width: 200px;
-    height: 98.53px; } }
+    width: 204px;
+    height: 82.08px; } }
 
 @media (min-width: 768px) {
   .logo-footer {
-    width: 290px;
-    height: 148.53px; } }
+    width: 289px;
+    height: 116.28px; } }
 
 @media (min-width: 1280px) {
   .logo-footer {
@@ -374,5 +918,3 @@ body {
     padding: 5px; }
   .min_footer {
     display: flex; } }
-
-/********************* ASIDE *********************/
